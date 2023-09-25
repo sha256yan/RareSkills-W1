@@ -33,10 +33,6 @@ contract BondingCurveTest is Test {
         _purchase(ETH_IN, Math.sqrt(ETH_IN) + 1);
     }
 
-    function testSequentialActions() public {
-
-    }
-
     /* -------------------------------------------------------------------- */
 
     function _purchase(uint256 ethIn, uint256 minTokenOut) internal {
