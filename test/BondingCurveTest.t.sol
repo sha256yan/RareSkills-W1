@@ -42,5 +42,4 @@ contract BondingCurveTest is Test {
     function _sell(uint256 minEthOut, uint256 amountToSell) internal {
         bondingCurve.sellTokens(minEthOut, amountToSell);
     }
-
 }

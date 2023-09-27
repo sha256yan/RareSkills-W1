@@ -7,7 +7,6 @@ import "openzeppelin/token/ERC20/ERC20.sol";
 // question: what's the best practice for return values of external/public functions?
 // must they all have a return value (bool success)? or can they return nothing?
 
-
 /* 
 
 ASSUMPTIONS
@@ -17,7 +16,7 @@ ASSUMPTIONS
 
 */
 
-contract BondingCurve is ERC20{
+contract BondingCurve is ERC20 {
     uint256 public ethReserve;
     uint256 public tokenSupply;
 
@@ -61,5 +60,4 @@ contract BondingCurve is ERC20{
         uint256 ethOut = (tokenIn ** 2) + ((tokenSupply * tokenIn) << 1);
         return ethOut;
     }
-
 }
