@@ -39,5 +39,4 @@ contract SanctionedToken is ERC20 {
         require(!sanctioned[from], "E2");
         require(!sanctioned[to], "E3");
     }
-
 }
