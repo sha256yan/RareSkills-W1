@@ -7,7 +7,7 @@ import "openzeppelin/token/ERC20/ERC20.sol";
 // question: what's the best practice for return values of external/public functions?
 // must they all have a return value (bool success)? or can they return nothing?
 
-// question: consensus on using custom errors instead of revert()?
+// question: consensus on using custom errors?
 
 // question: should there be any trace of front-end requirements in the smart contract?
 
