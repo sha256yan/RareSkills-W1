@@ -35,9 +35,9 @@ contract SanctionedToken is ERC20 {
         }
     }
 
-    function _transfer(address from, address to, uint256 amount) internal virtual override {
+    function _beforeTokenTransfer(address from, address to, uint256) internal virtual override {
         require(!sanctioned[from], "E2");
         require(!sanctioned[to], "E3");
-        super._transfer(from, to, amount);
     }
+
 }
