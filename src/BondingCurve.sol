@@ -7,14 +7,9 @@ import "openzeppelin/token/ERC20/ERC20.sol";
 // question: what's the best practice for return values of external/public functions?
 // must they all have a return value (bool success)? or can they return nothing?
 
-/* 
+// question: consensus on using custom errors instead of revert()?
 
-ASSUMPTIONS
-
-- RESERVE STAYS BELOW 10M ETH
-- ETH IN STAYS BELOW 1M ETH
-
-*/
+// question: should there be any trace of front-end requirements in the smart contract?
 
 contract BondingCurve is ERC20 {
     uint256 public ethReserve;

@@ -7,8 +7,6 @@ import "openzeppelin/token/ERC20/ERC20.sol";
 
 // question: what are all the "chokepoints" we need to consider to enforce the sanctions? Should approvals be prohibited as well?
 
-// question: how to properly use "Error" in solidity?
-
 contract SanctionedToken is ERC20 {
     address public owner;
     mapping(address => bool) public sanctioned;
